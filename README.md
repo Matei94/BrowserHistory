@@ -1,31 +1,38 @@
 BrowserHistory
 ==============
 
-	*******************************
-	*** Tema 2: Browser History ***
-	*******************************
+	***********************
+	**** Tema 2 la SD *****
+	*** Browser History ***
+	***********************
 	
 
 In inplementarea temei a fost folosita structura de date numita _deque_.
 Deque-ul a fost implementat in mod hibrid: fiecare nod contine un vector.
 
-		Operatii deque:
+Operatii deque:
 	
-push_front: Inserare la începutul structurii
-pop_front: Ștergere a primului element
-push_back: Inserare la finalul structurii
-pop_back: Ștergere a ultimului element
-front: Întoarce primul element
-back: Întoarce ultimul element
+	push_front: Inserare la începutul structurii
 
-erase: Se gaseste mai intai nodul(vectorul) in care se afla
-	   elementul de sters. Apoi se sterge mutand mai "sus"
-	   cu o pozitie elementele de "dedesubtul" pozitiei de sters.
+	pop_front: Ștergere a primului element
+
+	push_back: Inserare la finalul structurii
+
+	pop_back: Ștergere a ultimului element
+
+	front: Întoarce primul element
+
+	back: Întoarce ultimul element
+
+	erase: Se gaseste mai intai nodul(vectorul) in care se afla
+	elementul de sters. Apoi se sterge mutand mai "sus"
+	cu o pozitie elementele de "dedesubtul" pozitiei de sters.
 	   
-get: Se gaseste mai intai nodul(vectorul) in care se afla
-	 elementul de intors. Se intoarce intrarea.
+	get: Se gaseste mai intai nodul(vectorul) in care se afla
+	ementul de intors. Se intoarce intrarea.
+	 
 	
-		Comenzi posibile:
+Comenzi posibile:
 		
 	__DAY_PASSES__
 Se incrementeaza current_day si se sterg intratile mai vechi de max_days zile.
