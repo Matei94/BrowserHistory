@@ -7,7 +7,7 @@ BrowserHistory
 	***********************
 	
 
-In inplementarea temei a fost folosita structura de date numita _deque_.
+In inplementarea programului a fost folosita structura de date numita _deque_.
 Deque-ul a fost implementat in mod hibrid: fiecare nod contine un vector.
 
 Operatii deque:
