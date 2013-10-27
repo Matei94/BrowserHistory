@@ -1,0 +1,929 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0047)http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>
+    Tema 2 - Browser History    [CS Open CourseWare]
+  </title>
+
+  <meta name="generator" content="DokuWiki">
+<meta name="robots" content="index,follow">
+<meta name="date" content="2013-04-18T22:34:27+0300">
+<meta name="keywords" content="sd-ca,teme,teme-02">
+<link rel="search" type="application/opensearchdescription+xml" href="http://ocw.cs.pub.ro/courses/lib/exe/opensearch.php" title="CS Open CourseWare">
+<link rel="start" href="http://ocw.cs.pub.ro/courses/">
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://ocw.cs.pub.ro/courses/feed.php">
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://ocw.cs.pub.ro/courses/feed.php?mode=list&ns=sd-ca:teme">
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://ocw.cs.pub.ro/courses/_export/xhtml/sd-ca/teme/teme-02">
+<link rel="canonical" href="./Tema 2 - Browser History [CS Open CourseWare]_files/Tema 2 - Browser History [CS Open CourseWare].html">
+<link rel="stylesheet" type="text/css" href="./Tema 2 - Browser History [CS Open CourseWare]_files/css.php">
+<script type="text/javascript">/*<![CDATA[*/var NS='sd-ca:teme';var JSINFO = {"id":"sd-ca:teme:teme-02","namespace":"sd-ca:teme","isadmin":0,"isauth":0};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="./Tema 2 - Browser History [CS Open CourseWare]_files/js.php"></script>
+<script type="text/javascript">/*<![CDATA[*/
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		  
+/*!]]>*/</script><script src="./Tema 2 - Browser History [CS Open CourseWare]_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">/*<![CDATA[*/
+var pageTracker = _gat._getTracker("UA-38383934-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+		  
+/*!]]>*/</script>
+<script type="text/x-mathjax-config;executed=true">/*<![CDATA[*/MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+        displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+        processEscapes: true
+    }
+});
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="./Tema 2 - Browser History [CS Open CourseWare]_files/MathJax.js"></script>
+
+  <link rel="shortcut icon" href="http://ocw.cs.pub.ro/courses/lib/tpl/arctic/images/favicon.ico">
+
+  
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style></head>
+<body><div id="MathJax_Message" style="display: none;"></div>
+<div id="wrapper" class="show">
+  <div class="dokuwiki">
+
+    
+    <div class="stylehead">
+      <div class="header">
+        <div class="pagename">
+          <a href="http://ocw.cs.pub.ro/courses/sd-ca/"><img height="70" src="./Tema 2 - Browser History [CS Open CourseWare]_files/sigla_cs.png"> </a>        </div>
+        <div class="logo">
+          <a style="color: #AAA !important;" href="http://ocw.cs.pub.ro/courses/">Open CourseWare</a>        </div>
+      </div>
+    
+       
+      <div class="breadcrumbs">
+              </div>
+      
+            </div>
+
+                  <div class="bar" id="bar__top">
+        <div class="bar-left">
+                  </div>
+        <div class="bar-right">
+          <a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02?do=login&sectok=9c6a3c70746e5697e496d5d6f13170f0" class="action login" rel="nofollow" title="Login">Login</a>        </div>
+    </div>
+        
+    
+    
+    
+              <div class="left_page">
+          
+<h1 class="sectionedit1" id="tema_2_-_browser_history">Tema 2 - Browser History</h1>
+<div class="level1">
+
+<p>
+Responsabili:
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="mailto:mailto:mbivol@rosedu.org" class="mail" title="mailto:mbivol@rosedu.org"> Mihai Bivol</a> (2013)</div>
+</li>
+<li class="level1"><div class="li"> <a href="mailto:mailto:sorina@rosedu.org" class="mail" title="mailto:sorina@rosedu.org"> Sorina Sandu</a> (2013)</div>
+</li>
+</ul>
+
+<p>
+<strong>Deadline:</strong> <del>19 Aprilie 2013</del> 20 Aprilie 2013, ora 23:55
+</p>
+
+<p>
+<strong>Changelist:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> 18 Aprilie, 22.30 - Prelungire deadline cu o zi.</div>
+</li>
+<li class="level1"><div class="li"> 14 Aprilie, 12:50 - Adăugat exempul 2</div>
+</li>
+<li class="level1"><div class="li"> 14 Aprilie, 12:30 - Update arhiva teste, corectare zile negative din fișierele pentru recover history.</div>
+</li>
+<li class="level1"><div class="li"> 5 Aprilie, 17:30 - Update format afișare checker.</div>
+</li>
+</ul>
+
+</div>
+
+<h2 class="sectionedit2" id="obiective">Obiective</h2>
+<div class="level2">
+
+<p>
+În urma realizării temei, studentul va putea să:
+</p>
+<ul>
+<li class="level1"><div class="li"> înțeleagă și implementeze structuri de date noi (<a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#deque" title="sd-ca:teme:teme-02 ↵" class="wikilink1">deque</a>), bazându-se pe cele deja cunoscute (cozi, liste, vectori etc).</div>
+</li>
+<li class="level1"><div class="li"> înțeleagă diferența dintre funcționalitatea unei structuri de date abstracte și detaliile de implementare.</div>
+</li>
+</ul>
+
+</div>
+
+<h2 class="sectionedit3" id="introducere">Introducere</h2>
+<div class="level2">
+
+<p>
+Cum Browser-ul este una dintre cele mai utilizate aplicații, ne dorim ca acesta să funcționeze cât mai eficient și să fie cât mai rapid în orice situație.
+</p>
+
+<p>
+Un task pe care trebuie să-l implementeze orice browser este gestiunea istoricului. Pentru aceasta se folosește o structură de date denumită <a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#deque" title="sd-ca:teme:teme-02 ↵" class="wikilink1">deque</a>.
+</p>
+
+<p>
+Pentru a gestiona un istoric trebuie implementate diverse operații cum ar fi adăugarea unor noi intrări, șterea automată a celor vechi, selectarea unor intrări ce ar trebui șterse.
+</p>
+
+</div>
+
+<h2 class="sectionedit4" id="deque">Deque</h2>
+<div class="level2">
+
+<p>
+Pentru a implementa tema, se va folosi structura de date <a href="http://en.wikipedia.org/wiki/Deque" class="urlextern" title="http://en.wikipedia.org/wiki/Deque" rel="nofollow">deque</a>(Double ended queue).
+</p>
+
+<p>
+Deque este o structură de date ce permite următoarele operații:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>push_front</code>: Inserare la începutul structurii</div>
+</li>
+<li class="level1"><div class="li"> <code>pop_front</code>: Ștergere a primului element</div>
+</li>
+<li class="level1"><div class="li"> <code>push_back</code>: Inserare la finalul structurii</div>
+</li>
+<li class="level1"><div class="li"> <code>pop_back</code>: Ștergere a ultimului element</div>
+</li>
+<li class="level1"><div class="li"> <code>front</code>: Întoarce primul element</div>
+</li>
+<li class="level1"><div class="li"> <code>back</code>: Întoarce ultimul element</div>
+</li>
+</ul>
+
+<p>
+În funcție de implementare, se pot adăuga următoarele operații suplimentare:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>erase</code>: Șterge elementul de la o poziție dată</div>
+</li>
+<li class="level1"><div class="li"> <code>get</code>: Întoarce elementul de la o poziție dată</div>
+</li>
+</ul>
+
+</div>
+
+<h3 class="sectionedit5" id="implementari">Implementări</h3>
+<div class="level3">
+
+<p>
+În funcție de diversele implementări, se pot obține performanțe diferite pentru anumite operații asupra structurii de date.
+</p>
+
+<p>
+Un deque poate fi implementat în următoarele moduri:
+</p>
+
+</div>
+
+<h4 id="lista_dublu_inlantuita">Listă dublu înlănțuită</h4>
+<div class="level4">
+
+<p>
+În cazul de bază, un deque se poate implementa folosind o listă dublu înlănțuită.
+</p>
+
+<p>
+Această implementare oferă în timp constant operațiile de adăugare și ștergere de la începtul și finalul structurii.
+În schimb, timpul pentru a accesa elementul <code>i</code> este liniar (se vor face <code>i</code> operații pentru a întoarce / șterge elementul de la poziția <code>i</code>).
+</p>
+
+</div>
+
+<h4 id="vector">Vector</h4>
+<div class="level4">
+
+<p>
+O altă implementare se poate face folosind un vector și doi indecși (de început și final).
+</p>
+
+<p>
+<a href="http://ocw.cs.pub.ro/courses/_detail/sd-ca/teme/sd_tema2_deque01.png?id=sd-ca%3Ateme%3Ateme-02" class="media" title="sd-ca:teme:sd_tema2_deque01.png"><img src="./Tema 2 - Browser History [CS Open CourseWare]_files/sd_tema2_deque01.png" class="media" title="exemplu deque" alt="exemplu deque" width="500"></a>
+</p>
+
+<p>
+Atunci când vectorul este plin, va trebui realocat și toate elementele vor trebui mutate.
+</p>
+
+<p>
+Această implementare are avantajul de a executa operația <code>get</code> în timp constant.
+</p>
+
+<p>
+Pe o astfel de implementare, la o operație de <code>erase</code>, toate elementele vor trebui mutate pentru a acoperi poziția eliminată.
+</p>
+
+</div>
+
+<h4 id="hibrid">Hibrid</h4>
+<div class="level4">
+
+<p>
+Pentru implementarea temei propunem o implementare hibridă. Listă dublu înlănțuită ce conține în fiecare nod un deque implementat ca vector.
+</p>
+
+<p>
+Operațiile vor fi făcute astfel:
+<code>push_back</code>, <code>push_front</code>: Se încearcă adăugarea în ultimul/primul nod. Dacă nu este posibil, se creează un nou nod, se inserează la final/început, se adaugă valoarea la început/final în deque-ul din nod.
+</p>
+
+<p>
+<code>pop_back</code>, <code>pop_front</code>: Se apelează <code>pop_back</code>/<code>pop_front</code> pe ultimu/primul nod. Dacă nodul rămâne fără elemente, acesta este eliminat din listă.
+</p>
+
+<p>
+<code>get</code>: Se parcurge lista nod cu nod. Se identifică nodul în care se află elementul. Se întoarce valoarea acestuia.
+</p>
+
+<p>
+<code>erase</code>: Se parcurge lista nod cu nod. Se identifică nodul din care trebuie șters elementul. Se șterge elementul (mutând elementele cu poziția i mai mare decât poziția sa pe poziția i - 1). Dacă nodul rămâne fără elemente, acesta este eliminat din listă.
+</p>
+
+<p>
+<a href="http://ocw.cs.pub.ro/courses/_detail/sd-ca/teme/sd_tema2_deque02.png?id=sd-ca%3Ateme%3Ateme-02" class="media" title="sd-ca:teme:sd_tema2_deque02.png"><img src="./Tema 2 - Browser History [CS Open CourseWare]_files/sd_tema2_deque02.png" class="media" title="exemplu deque" alt="exemplu deque" width="500"></a>
+</p>
+
+<p>
+Folosind această implementare, ștergerile de la un index dat se fac mult mai rapid.
+</p>
+
+<p>
+</p><p></p><div class="notetip">
+Dimensiunea vectorilor din interiorul unui nod influențează timpul de execuție. Pentru temă, <strong>dimensiunea vectorilor va fi dată în datele de intrare</strong>.
+
+</div><p></p>
+<p></p>
+
+</div>
+
+<h2 class="sectionedit6" id="cerinta">Cerință</h2>
+<div class="level2">
+
+<p>
+Se dorește simularea comportamentului modulului de history dintr-un browser.
+Simularea se va face prin interpretarea unor comenzi primite de la <strong>stdin</strong>.
+</p>
+
+</div>
+
+<h2 class="sectionedit7" id="specificatii">Specificații</h2>
+<div class="level2">
+
+<p>
+</p><p></p><div class="noteimportant">
+Testele sunt concepute astfel încât să fie avantajată implementarea hibridă. Sunt acceptate și celalte implementări, dar nu vor obține punctaj maxim pe checker.
+
+</div><p></p>
+<p></p>
+
+<p>
+</p><p></p><div class="noteimportant">
+Pentru fiecare test există un timeout predefinit.
+
+</div><p></p>
+<p></p>
+
+<p>
+Comenzile primite simulează activitatea unui utilazator asupra browser-ului de-a lungul mai multor zile.
+</p>
+
+<p>
+Activitatea începe în <strong>ziua 0</strong>, apoi ziua este incrementată cu o comandă specifică (<code>DAY_PASSES</code>).
+</p>
+
+<p>
+Utilizatorul poate accesa pagini, toate paginile accesate având ziua de accesare setată la ziua curentă.
+</p>
+
+<p>
+Utilizatorul poate cere o anume intrare, dată prin index-ul ei în istoric și poate deasemnea șterge o intrare dată prin index. În cazul unei ștergeri, indecșii celorlalte intrări se vor modifica corespunzător.
+</p>
+
+<p>
+Utilizatorul poate importa dintr-un fișier de back-up intrări mai vechi, ce nu apar în history-ul curent prin comanda <code>RECOVER_HISTORY</code>. 
+</p>
+
+<p>
+Browser-ul reține în istoricul lui intrări pentru un număr maxim de zile, prestabilit. Acest număr este <strong>inițial 30</strong>, putând fi apoi modificat prin intermediul unei comenzi (<code>SET_MAX_DAYS</code>). Browser-ul va trebui să șteargă automat intrările mai vechi de &lt;MAX_DAYS&gt; atunci când s-a terminat ziua sau când este modificat numărul maxim de zile. Deasemenea, atunci când se face <code>RECOVER_HISTORY</code> trebuie luat  în considerare și numărul maxim de zile ce sunt rețiunte, intrările mai vechi de atât, nu sunt salvate.
+</p>
+
+</div>
+
+<h2 class="sectionedit8" id="precizari_de_implementare">Precizări de implementare</h2>
+<div class="level2">
+
+</div>
+
+<h3 class="sectionedit9" id="input">Input</h3>
+<div class="level3">
+
+<p>
+Aplicația va primi comenzi de la consolă (<strong>stdin</strong>). Se vor citi comenzi până la <abbr title="End of file">EOF</abbr> (apăsarea ctrl-d), pot exista linii albe între comenzi.
+</p>
+<pre class="code">&lt;dimensiune_vector_deque&gt;
+&lt;comanda&gt; &lt;args&gt;
+&lt;comanda&gt; &lt;args&gt;
+...
+&lt;comanda&gt; &lt;args&gt;</pre>
+
+<p>
+Comenzi posibile:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>DAY_PASSES</strong></div>
+<ul>
+<li class="level2"><div class="li"> Ziua curentă s-a terminat, se trece la ziua următoare. Prima zi este <strong>ziua 0</strong>.</div>
+</li>
+<li class="level2"><div class="li"> Se șterg intrările mai vechi decât numărul de zile maxim permis. Inițial, acesta este de <strong>30 de zile</strong>.</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>ACCESS_PAGE</strong> &lt;<abbr title="Uniform Resource Locator">URL</abbr>&gt;</div>
+<ul>
+<li class="level2"><div class="li"> Este accesată pagina de la <abbr title="Uniform Resource Locator">URL</abbr>, trebuie adăugată intrarea ca fiind cea mai recentă din history.</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>CLEAR_RECENT_HISTORY</strong> &lt;NO_DAYS&gt;</div>
+<ul>
+<li class="level2"><div class="li"> Sunt șterse intrările din ultimele &lt;NO_DAYS&gt; zile.</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>SET_MAX_DAYS</strong> &lt;NO_DAYS&gt;</div>
+<ul>
+<li class="level2"><div class="li"> Se modifică numărul de zile maxim permis. Acesta primește valoarea &lt;NO_DAYS&gt;.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Atenție!</strong> Vor trebui șterse intrările devenite prea vechi.</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>SHOW_ENTRY</strong> &lt;INDEX&gt;</div>
+<ul>
+<li class="level2"><div class="li"> Se afișează intrarea de la indexul &lt;INDEX&gt;.</div>
+</li>
+<li class="level2"><div class="li"> Formatul de afișare este precizat în secțiunea <a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#output" title="sd-ca:teme:teme-02 ↵" class="wikilink1">output</a>.</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>DELETE_ENTRY</strong> &lt;INDEX&gt;</div>
+<ul>
+<li class="level2"><div class="li"> Se șterge intrarea de la indexul &lt;INDEX&gt;</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>SHOW_HISTORY</strong></div>
+<ul>
+<li class="level2"><div class="li"> Se afișează toate intrările din history și ziua curentă.</div>
+</li>
+<li class="level2"><div class="li"> Formatul de afișare este precizat în secțiunea <a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#output" title="sd-ca:teme:teme-02 ↵" class="wikilink1">output</a>.</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>RECOVER_HISTORY</strong> &lt;FILE_NAME&gt; </div>
+<ul>
+<li class="level2"><div class="li"> Se încarcă din fișierul &lt;FILE_NAME&gt; o serie de intrări date prin ziua de acces și <abbr title="Uniform Resource Locator">URL</abbr>.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Se garantează</strong> că datele din fișierul de intrare au ziua de acces mai mică decât cea mai veche zi de acces din history-ul curent și că sunt sortate descrescător.</div>
+</li>
+<li class="level2"><div class="li"> Formatul fișierului &lt;FILE_NAME&gt; este:</div>
+</li>
+</ul>
+</li>
+</ul>
+<pre class="code">&lt;numar_intrari&gt;
+&lt;zi1&gt; &lt;URL1&gt;
+&lt;zi2&gt; &lt;URL2&gt;
+...
+&lt;zi&lt;numar_intrari&gt;&gt; &lt;URL&lt;numar_intrari&gt;&gt;</pre>
+
+<p>
+</p><p></p><div class="notetip">
+Pentru a testa folosind comenzi dintr-un fișier, îl puteți redirecta la stdin:
+<p></p>
+<pre class="code">$ ./tema1 &lt; comenzi.txt</pre>
+
+<p>
+
+</p></div><p></p>
+<p></p>
+
+</div>
+
+<h3 class="sectionedit10" id="output">Output</h3>
+<div class="level3">
+
+<p>
+Se vor afișa la <strong>stdout</strong> rezultatele comenzilor <code>SHOW_ENTRY</code> și <code>SHOW_HISTORY</code>. Formatul output-ului este:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>SHOW_ENTRY</code> &lt;INDEX&gt;:</div>
+</li>
+</ul>
+<pre class="code bash">ENTRY <span class="sy0">&lt;</span>INDEX<span class="sy0">&gt;</span>:
+<span class="sy0">&lt;</span>day<span class="sy0">&gt;</span> <span class="sy0">&lt;</span>URL<span class="sy0">&gt;</span></pre>
+
+<p>
+<strong>Atenție!</strong> Șirul <code>“Entry”</code> și caracterul <code>':</code>' <strong>trebuie</strong> să apară în output.
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>SHOW_HISTORY</code>:</div>
+</li>
+</ul>
+<pre class="code bash">HISTORY:
+Current day: <span class="sy0">&lt;</span>CURRENT_DAY<span class="sy0">&gt;</span>
+<span class="sy0">&lt;</span>day<span class="sy0">&gt;</span> <span class="sy0">&lt;</span>URL<span class="sy0">&gt;</span>
+<span class="sy0">&lt;</span>day<span class="sy0">&gt;</span> <span class="sy0">&lt;</span>URL<span class="sy0">&gt;</span>
+...
+<span class="sy0">&lt;</span>day<span class="sy0">&gt;</span> <span class="sy0">&lt;</span>URL<span class="sy0">&gt;</span></pre>
+
+<p>
+<strong>Atenție!</strong> Șirurile <code>“HISTORY:”</code> și <code>“Current day:”</code> <strong>trebuie</strong> să apară în output.
+</p>
+
+</div>
+
+<h3 class="sectionedit11" id="exemple">Exemple</h3>
+<div class="level3">
+
+</div>
+
+<h4 id="exemplul_1">Exemplul 1</h4>
+<div class="level4">
+<dl class="code">
+<dt><a href="http://ocw.cs.pub.ro/courses/_export/code/sd-ca/teme/teme-02?codeblock=5" title="Download Snippet" class="mediafile mf_in">test01.in</a></dt>
+<dd><pre class="code bash"><span class="nu0">100</span>
+DAY_PASSES
+DAY_PASSES
+ACCESS_PAGE www.google.com
+DAY_PASSES
+ACCESS_PAGE www.facebook.com
+DAY_PASSES
+ACCESS_PAGE www.youtube.com
+SHOW_ENTRY <span class="nu0">1</span>
+SHOW_HISTORY
+&nbsp;
+CLEAR_RECENT_HISTORY <span class="nu0">2</span>
+SHOW_HISTORY
+&nbsp;
+RECOVER_HISTORY history.txt
+SHOW_HISTORY
+&nbsp;
+SET_MAX_DAYS <span class="nu0">4</span>
+SHOW_HISTORY</pre>
+</dd></dl>
+<dl class="code">
+<dt><a href="http://ocw.cs.pub.ro/courses/_export/code/sd-ca/teme/teme-02?codeblock=6" title="Download Snippet" class="mediafile mf_txt">history.txt</a></dt>
+<dd><pre class="code bash"><span class="nu0">3</span>
+<span class="nu0">1</span> www.gmail.com
+<span class="nu0">0</span> www.9gag.com
+<span class="nu0">0</span> cs.curs.pub.ro</pre>
+</dd></dl>
+<dl class="code">
+<dt><a href="http://ocw.cs.pub.ro/courses/_export/code/sd-ca/teme/teme-02?codeblock=7" title="Download Snippet" class="mediafile mf_ref">test01.ref</a></dt>
+<dd><pre class="code bash">ENTRY <span class="nu0">1</span>:
+<span class="nu0">3</span> www.facebook.com
+&nbsp;
+HISTORY:
+Current day: <span class="nu0">4</span>
+<span class="nu0">4</span> www.youtube.com
+<span class="nu0">3</span> www.facebook.com
+<span class="nu0">2</span> www.google.com
+&nbsp;
+HISTORY:
+Current day: <span class="nu0">4</span>
+<span class="nu0">2</span> www.google.com
+&nbsp;
+HISTORY:
+Current day: <span class="nu0">4</span>
+<span class="nu0">2</span> www.google.com
+<span class="nu0">1</span> www.gmail.com
+<span class="nu0">0</span> www.9gag.com
+<span class="nu0">0</span> cs.curs.pub.ro
+&nbsp;
+HISTORY:
+Current day: <span class="nu0">4</span>
+<span class="nu0">2</span> www.google.com
+<span class="nu0">1</span> www.gmail.com</pre>
+</dd></dl>
+
+</div>
+
+<h4 id="exemplul_2">Exemplul 2</h4>
+<div class="level4">
+<dl class="code">
+<dt><a href="http://ocw.cs.pub.ro/courses/_export/code/sd-ca/teme/teme-02?codeblock=8" title="Download Snippet" class="mediafile mf_in">test02.in</a></dt>
+<dd><pre class="code bash"><span class="nu0">1000</span>
+DAY_PASSES
+DAY_PASSES
+DAY_PASSES
+ACCESS_PAGE a
+ACCESS_PAGE b
+SHOW_HISTORY
+SHOW_ENTRY <span class="nu0">0</span>
+SHOW_HISTORY
+&nbsp;
+RECOVER_HISTORY foo.txt
+SHOW_HISTORY
+&nbsp;
+SHOW_ENTRY <span class="nu0">0</span>
+SHOW_ENTRY <span class="nu0">2</span>
+SHOW_ENTRY <span class="nu0">3</span>
+SHOW_ENTRY <span class="nu0">4</span>
+SHOW_HISTORY</pre>
+</dd></dl>
+<dl class="code">
+<dt><a href="http://ocw.cs.pub.ro/courses/_export/code/sd-ca/teme/teme-02?codeblock=9" title="Download Snippet" class="mediafile mf_txt">foo.txt</a></dt>
+<dd><pre class="code bash"><span class="nu0">3</span>
+<span class="nu0">1</span> d
+<span class="nu0">0</span> e
+<span class="nu0">0</span> f</pre>
+</dd></dl>
+<dl class="code">
+<dt><a href="http://ocw.cs.pub.ro/courses/_export/code/sd-ca/teme/teme-02?codeblock=10" title="Download Snippet" class="mediafile mf_ref">test02.ref</a></dt>
+<dd><pre class="code bash">HISTORY:
+Current day: <span class="nu0">3</span>
+<span class="nu0">3</span> b
+<span class="nu0">3</span> a
+&nbsp;
+ENTRY <span class="nu0">0</span>:
+<span class="nu0">3</span> b
+&nbsp;
+HISTORY:
+Current day: <span class="nu0">3</span>
+<span class="nu0">3</span> b
+<span class="nu0">3</span> a
+&nbsp;
+HISTORY:
+Current day: <span class="nu0">3</span>
+<span class="nu0">3</span> b
+<span class="nu0">3</span> a
+<span class="nu0">1</span> d
+<span class="nu0">0</span> e
+<span class="nu0">0</span> f
+&nbsp;
+ENTRY <span class="nu0">0</span>:
+<span class="nu0">3</span> b
+&nbsp;
+ENTRY <span class="nu0">2</span>:
+<span class="nu0">1</span> d
+&nbsp;
+ENTRY <span class="nu0">3</span>:
+<span class="nu0">0</span> e
+&nbsp;
+ENTRY <span class="nu0">4</span>:
+<span class="nu0">0</span> f
+&nbsp;
+HISTORY:
+Current day: <span class="nu0">3</span>
+<span class="nu0">3</span> b
+<span class="nu0">3</span> a
+<span class="nu0">1</span> d
+<span class="nu0">0</span> e
+<span class="nu0">0</span> f</pre>
+</dd></dl>
+
+</div>
+
+<h2 class="sectionedit12" id="reguli_pentru_trimitere">Reguli pentru trimitere</h2>
+<div class="level2">
+
+<p>
+Temele vor trebui trimise pe <a href="https://elf.cs.pub.ro/vmchecker/ui/#SD" class="urlextern" title="https://elf.cs.pub.ro/vmchecker/ui/#SD" rel="nofollow">vmchecker</a>. 
+<strong>Atenție!</strong> Temele trebuie trimise în secțiunea <strong>Structuri de Date (CA)</strong>.
+</p>
+
+<p>
+Arhiva trebuie să conțină:
+</p>
+<ul>
+<li class="level1"><div class="li"> surse</div>
+</li>
+<li class="level1"><div class="li"> fișier Makefile cu două reguli:</div>
+<ul>
+<li class="level2"><div class="li"> regula <strong>build</strong>: în urma căreia se generează un executabil numit <strong>tema2</strong></div>
+</li>
+<li class="level2"><div class="li"> regula <strong>clean</strong> care şterge executabilul</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> fisier <strong>README</strong> care să conțină detalii despre implementarea temei</div>
+</li>
+</ul>
+
+</div>
+
+<h2 class="sectionedit13" id="punctaj">Punctaj</h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> 90 puncte obținute pe testele de pe vmchecker</div>
+</li>
+<li class="level1"><div class="li"> 10 puncte: coding style și README</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> TOTAL: 100 puncte</div>
+</li>
+</ul>
+
+<p>
+Coding style-ul trebui sa fie consistent si usor de citit.
+</p>
+
+<p>
+<strong>Atenție!</strong> Tema valorează 1 punct din nota finală. 
+Citiți cu atenție <a href="http://ocw.cs.pub.ro/courses/sd-ca/regulament#reguli_de_trimitere_a_temelor" class="urlextern" title="http://ocw.cs.pub.ro/courses/sd-ca/regulament#reguli_de_trimitere_a_temelor" rel="nofollow">Regulamentul General de Trimitere a Temelor</a>.
+</p>
+
+<p>
+O temă copiată va atrage eliminarea punctajului <strong>pe toate temele</strong>.
+</p>
+
+</div>
+
+<h2 class="sectionedit14" id="checker">Checker</h2>
+<div class="level2">
+
+<p>
+</p><p></p><div class="noteimportant">
+<p></p>
+<ul>
+<li class="level1"><div class="li"> Puteți downloada checker-ul de aici: <a href="http://ocw.cs.pub.ro/courses/_media/sd-ca/teme/tema2-checker.zip" class="media mediafile mf_zip" title="sd-ca:teme:tema2-checker.zip">tema2-checker.zip</a></div>
+</li>
+<li class="level1"><div class="li"> Sunt aceleași teste ca pe vmchecker.</div>
+</li>
+</ul>
+
+<p>
+
+</p></div><p></p>
+<p></p>
+
+<p>
+</p><p></p><div class="noteclassic">
+<p></p>
+<ul>
+<li class="level1"><div class="li"> Checker-ul este case insensitive.</div>
+</li>
+<li class="level1"><div class="li"> Checker-ul ignoră liniile albe.</div>
+</li>
+</ul>
+
+<p>
+
+</p></div><p></p>
+<p></p>
+
+</div>
+
+<h2 class="sectionedit15" id="faq">FAQ</h2>
+<div class="level2">
+
+<p>
+<strong>Q:</strong> Se poate folosi STL?
+</p>
+
+<p>
+<strong>R:</strong> Nu. Obiectivul principal al cursului de structuri de date este acela ca voi să implementați structurile respective.
+</p>
+
+</div>
+
+<h2 class="sectionedit16" id="resurse">Resurse</h2>
+<div class="level2">
+
+<p>
+<a href="http://www.learncpp.com/" class="urlextern" title="http://www.learncpp.com/" rel="nofollow">C++ Tutorial</a>
+</p>
+
+</div>
+
+        </div>
+        <div class="right_sidebar">
+          <form action="http://ocw.cs.pub.ro/courses/start" accept-charset="utf-8" class="search" id="dw__search" method="get"><div class="no"><input type="hidden" name="do" value="search"><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[F]"><input type="submit" value="Search" class="button" title="Search"><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>          <div class="namespace_sidebar sidebar_box">
+<ul>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/regulament" class="wikilink1" title="sd-ca:regulament">Reguli generale și de notare</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/catalog" class="wikilink1" title="sd-ca:catalog">Catalog</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/concursuri" class="wikilink1" title="sd-ca:concursuri">Concursuri</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/calendar" class="wikilink1" title="sd-ca:calendar">Calendar</a></div>
+</li>
+</ul>
+
+<h1 class="sectionedit17" id="cursuri">Cursuri</h1>
+<div class="level1">
+
+<div><div id="nojs_indexmenu_580013825526d05bbb83cf" data-jsajax="" class="indexmenu_nojs">
+
+<ul class="idx">
+<li class="level1"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/cursuri/curs01" class="wikilink1" title="sd-ca:cursuri:curs01">Curs 01 - C++ Programming</a></div></li>
+</ul>
+</div></div>
+
+</div>
+<!-- EDIT17 SECTION "Cursuri" [234-288] -->
+<h1 class="sectionedit18" id="laboratoare">Laboratoare</h1>
+<div class="level1">
+<ul>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/laboratoare/laborator-01" class="wikilink1" title="sd-ca:laboratoare:laborator-01">Laborator 1 - Introducere in C++</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/laboratoare/laborator-02" class="wikilink1" title="sd-ca:laboratoare:laborator-02">Laborator 2 - Noțiuni de C++ și Sortare</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/laboratoare/laborator-03" class="wikilink1" title="sd-ca:laboratoare:laborator-03">Laborator 3 - Stive</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/laboratoare/laborator-04" class="wikilink1" title="sd-ca:laboratoare:laborator-04">Laborator 4 - Cozi</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/laboratoare/laborator-05" class="wikilink1" title="sd-ca:laboratoare:laborator-05">Laborator 5 - Liste generice</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/laboratoare/laborator-06" class="wikilink1" title="sd-ca:laboratoare:laborator-06">Laborator 6 - HashTable</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/laboratoare/laborator-07" class="wikilink1" title="sd-ca:laboratoare:laborator-07">Laborator 7 - Grafuri</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/laboratoare/laborator-08" class="wikilink1" title="sd-ca:laboratoare:laborator-08">Laborator 8 - Arbori Binari</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/laboratoare/laborator-09" class="wikilink1" title="sd-ca:laboratoare:laborator-09">Laborator 9 - Arbori Binari de Căutare</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/laboratoare/laborator-10" class="wikilink1" title="sd-ca:laboratoare:laborator-10">Laborator 10 - Heap-uri</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/laboratoare/laborator-11" class="wikilink1" title="sd-ca:laboratoare:laborator-11">Laborator 11 - Treap-uri</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/laboratoare/laborator-12" class="wikilink1" title="sd-ca:laboratoare:laborator-12">Laborator 12 - Mulțimi Disjuncte</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT18 SECTION "Laboratoare" [289-1209] -->
+<h1 class="sectionedit19" id="teme">Teme</h1>
+<div class="level1">
+<ul>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-01" class="wikilink1" title="sd-ca:teme:teme-01">Tema 1</a></div>
+</li>
+<li class="level1"><div class="li"> <span class="curid"><a href="./Tema 2 - Browser History [CS Open CourseWare]_files/Tema 2 - Browser History [CS Open CourseWare].html" class="wikilink1" title="sd-ca:teme:teme-02">Tema 2</a></span></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-03" class="wikilink1" title="sd-ca:teme:teme-03">Tema 3</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-04" class="wikilink1" title="sd-ca:teme:teme-04">Tema 4</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT19 SECTION "Teme" [1210-1365] -->
+<h1 class="sectionedit20" id="resurse">Resurse</h1>
+<div class="level1">
+
+<div><div id="nojs_indexmenu_1798823039526d05bbb9262" data-jsajax="" class="indexmenu_nojs">
+
+<ul class="idx">
+<li class="level1"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/resurse/debugging" class="wikilink1" title="sd-ca:resurse:debugging">Debugging</a></div></li>
+<li class="level1"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/resurse/visualization" class="wikilink1" title="sd-ca:resurse:visualization">Data Structure Visualization</a></div></li>
+</ul>
+</div></div>
+
+</div>
+<!-- EDIT20 SECTION "Resurse" [1366-] -->
+</div>
+<div class="toc_sidebar sidebar_box">
+<!-- TOC START -->
+<div id="sb__right__dw__toc">
+<h3 class="toggle">Table of Contents</h3>
+<div>
+
+<ul class="toc">
+<li class="level1"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#tema_2_-_browser_history">Tema 2 - Browser History</a></div>
+<ul class="toc">
+<li class="level2"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#obiective">Obiective</a></div></li>
+<li class="level2"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#introducere">Introducere</a></div></li>
+<li class="level2"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#deque">Deque</a></div>
+<ul class="toc">
+<li class="level3"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#implementari">Implementări</a></div>
+<ul class="toc">
+<li class="level4"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#lista_dublu_inlantuita">Listă dublu înlănțuită</a></div></li>
+<li class="level4"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#vector">Vector</a></div></li>
+<li class="level4"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#hibrid">Hibrid</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="level2"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#cerinta">Cerință</a></div></li>
+<li class="level2"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#specificatii">Specificații</a></div></li>
+<li class="level2"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#precizari_de_implementare">Precizări de implementare</a></div>
+<ul class="toc">
+<li class="level3"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#input">Input</a></div></li>
+<li class="level3"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#output">Output</a></div></li>
+<li class="level3"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#exemple">Exemple</a></div>
+<ul class="toc">
+<li class="level4"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#exemplul_1">Exemplul 1</a></div></li>
+<li class="level4"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#exemplul_2">Exemplul 2</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="level2"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#reguli_pentru_trimitere">Reguli pentru trimitere</a></div></li>
+<li class="level2"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#punctaj">Punctaj</a></div></li>
+<li class="level2"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#checker">Checker</a></div></li>
+<li class="level2"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#faq">FAQ</a></div></li>
+<li class="level2"><div class="li"><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#resurse">Resurse</a></div></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<!-- TOC END -->
+</div>
+        </div>
+      
+    
+      <div class="stylefoot">
+        <div class="meta">
+          <div class="user">
+                    </div>
+          <div class="doc">
+          sd-ca/teme/teme-02.txt · Last modified: 2013/04/18 22:34 by sorina.sandu          </div>
+        </div>
+      </div>
+
+    <div class="clearer"></div>
+
+    
+                <div class="bar" id="bar__bottom">
+      <div class="bar-left">
+        <a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02?do=revisions" class="action revs" accesskey="o" rel="nofollow" title="Old revisions [O]">Old revisions</a>      </div>
+      <div class="bar-right">
+        <a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02?do=media" class="action media" rel="nofollow" title="Media Manager">Media Manager</a><a href="http://ocw.cs.pub.ro/courses/sd-ca/teme/teme-02#dokuwiki__top" class="action top" accesskey="t" rel="nofollow" title="Back to top [T]">Back to top</a>      </div>
+    </div>
+    <div class="clearer"></div>
+            
+    <div align="center" class="footerinc">
+  <div class="license"><a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license"><img src="./Tema 2 - Browser History [CS Open CourseWare]_files/cc-by-sa.png" alt="CC Attribution-Share Alike 3.0 Unported"></a></div>
+  <a target="_blank" href="http://www.chimeric.de/" title="www.chimeric.de"><img src="./Tema 2 - Browser History [CS Open CourseWare]_files/button-chimeric-de.png" width="80" height="15" alt="www.chimeric.de" border="0"></a>
+
+  <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer" title="Valid CSS"><img src="./Tema 2 - Browser History [CS Open CourseWare]_files/button-css.png" width="80" height="15" alt="Valid CSS" border="0"></a>
+
+  <a target="_blank" href="http://wiki.splitbrain.org/wiki:dokuwiki" title="Driven by DokuWiki"><img src="./Tema 2 - Browser History [CS Open CourseWare]_files/button-dw.png" width="80" height="15" alt="Driven by DokuWiki" border="0"></a>
+
+  <a target="_blank" href="http://www.firefox-browser.de/" title="do yourself a favour and use a real browser - get firefox"><img src="./Tema 2 - Browser History [CS Open CourseWare]_files/button-firefox.png" width="80" height="15" alt="do yourself a favour and use a real browser - get firefox!!" border="0"></a>
+  
+  <a target="_blank" href="http://ocw.cs.pub.ro/courses/feed.php" title="Recent changes RSS feed"><img src="./Tema 2 - Browser History [CS Open CourseWare]_files/button-rss.png" width="80" height="15" alt="Recent changes RSS feed" border="0"></a>
+
+  <a target="_blank" href="http://validator.w3.org/check/referer" title="Valid XHTML 1.0"><img src="./Tema 2 - Browser History [CS Open CourseWare]_files/button-xhtml.png" width="80" height="15" alt="Valid XHTML 1.0" border="0"></a>
+</div>
+
+  </div>
+</div>
+
+<div class="no"><img src="./Tema 2 - Browser History [CS Open CourseWare]_files/indexer.php" width="2" height="1" alt=""></div>
+
+
+</body></html>
